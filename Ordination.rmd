@@ -26,8 +26,8 @@ PCoA <- function(
   dev.off()
   
   # Eigenvalues
-  (eigv_pcoa_1 <- as.numeric(sprintf("%.3f",pcoa$values$Eigenvalues[1]))*100)
-  (eigv_pcoa_2 <- as.numeric(sprintf("%.3f",pcoa$values$Eigenvalues[2]))*100)
+  (eigv_pcoa_1 <- as.numeric(sprintf("%.3f",pcoa$values$Relative_eig[1]))*100)
+  (eigv_pcoa_2 <- as.numeric(sprintf("%.3f",pcoa$values$Relative_eig[2]))*100)
   
   axisName1 = "PCoA1("
   axisName2 = "PCoA2("
